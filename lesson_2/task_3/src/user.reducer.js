@@ -7,7 +7,7 @@ export const addUserReducer = (state = initialState, action) => {
         case ADDUSER:
             return {
                 ...state,
-                userList: state.userList.concat({ id: 34, name: 'Tom' })
+                userList: state.userList.concat(user)
             } //++
         case DELETE:
             return {
