@@ -7,7 +7,7 @@ class ThemedButton extends React.Component {
           console.log(this.context),
           <button {...this.props} 
           style = {{
-              background: this.context.background,
+              backgroundColor: this.context.background,
               color: this.context.fontColor
 
           }} 
