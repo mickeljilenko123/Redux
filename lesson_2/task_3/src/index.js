@@ -1,7 +1,8 @@
 import store from './store'
-import { addUser } from './user.action'
+import { addUser, deleteUser } from './user.action'
 
 store.dispatch(addUser());
+store.dispatch(deleteUser());
 
 
 console.log(store.getState());
