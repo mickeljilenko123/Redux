@@ -1,25 +1,25 @@
 import { ADD, DELETE } from './users.actions';
 
+
+
 const initialState = {
-    usersList: []
+    usersList: [],
 }
 
-export const reducer = (state = initialState, action) => {
+export const userReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD:
             return {
                 ...state,
-                usersList: [
-                    ...state.usersList,
-                    action.data
-                ]
+                usersList: state.usersList.concat(action.user),
             }
         case DELETE:
             return {
                 ...state,
-                usersList: state.usersList.filter(({ id }) => id !== action.id)
+                usersList: state.usersList.filter(user => user.id !== action.id),
             }
+
         default:
             return state;
     }
-}
+};
