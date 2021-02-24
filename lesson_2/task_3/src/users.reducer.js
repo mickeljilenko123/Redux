@@ -9,10 +9,7 @@ export const reducer = (state = initialState, action) => {
         case ADD:
             return {
                 ...state,
-                usersList: [
-                    ...state.usersList,
-                    action.data
-                ]
+                usersList: state.usersList.concat(action.data)
             }
         case DELETE:
             return {
