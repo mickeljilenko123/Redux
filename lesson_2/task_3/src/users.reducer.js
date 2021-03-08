@@ -8,12 +8,15 @@ const createUser = (state = initialState, action) => {
         case ADD:
             return {
                 ...state,
-                userList: state.userList.concat({ id: 76, name: 'Sarah' })
+                userList: [
+                    ...state.userList,
+                    action.user
+                ]
             }
         case DELETE:
             return {
                 ...state,
-                userList: state.userList.filter(e => e.id !== 76)
+                userList: state.userList.filter(e => e.id !== action.id)
             }
     }
 }
