@@ -1,6 +1,6 @@
 import { ADD, DELETE } from './users.actions'
 const initialState = {
-    userList: []
+    usersList: []
 }
 
 const createUser = (state = initialState, action) => {
@@ -8,16 +8,18 @@ const createUser = (state = initialState, action) => {
         case ADD:
             return {
                 ...state,
-                userList: [
-                    ...state.userList,
+                usersList: [
+                    ...state.usersList,
                     action.user
                 ]
             }
         case DELETE:
             return {
                 ...state,
-                userList: state.userList.filter(e => e.id !== action.id)
+                usersList: state.usersList.filter(e => e.id !== action.id)
             }
+        default:
+            return state;
     }
 }
 
