@@ -5,7 +5,7 @@ const DECREMENT = "COUNTER/DECREMENT";
 
 const increment = () => {
     return {
-        type: INREMENT 
+        type: INCREMENT 
     } 
 }
 
@@ -17,7 +17,7 @@ const decrement = () => {
 
 const counterReducer = (state = 0, action) => {
     switch(action.type) {
-        case INREMENT :
+        case INCREMENT :
             return state + 1;
         case DECREMENT :
             return state - 1;
