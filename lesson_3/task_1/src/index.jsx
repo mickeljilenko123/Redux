@@ -9,14 +9,7 @@ store.subscribe(() => console.log(store.getState()))
 
 // store.dispatch(deleteUser(15));
 // console.log(store.getState())
-store.dispatch(increment())
-store.dispatch(increment())
-store.dispatch(increment())
-store.dispatch(decrement())
-store.dispatch(reset())
 
-store.dispatch(addUser({ id: 1, name: 'John' }));
-store.dispatch(addUser({ id: 14, name: 'Bob' }));
+store.dispatch(addUser({id: 1, name: 'Roli'}))
 
-store.dispatch(deleteUser(14));
 store.dispatch(updateUser(1, { id: 56, name: 'Jane', age: 23 }));
