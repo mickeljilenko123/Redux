@@ -5,8 +5,8 @@ import SelectedOptions from './SelectedOptions';
 const TransferList = () => {
     return (
         <div className="transfer-list">
-            <AvailableOptions title="Available option" />
-            <SelectedOptions title="Selected option" />
+            <AvailableOptions title="Available otions"/>
+            <SelectedOptions title="Selectid otions"/>
         </div>
     );
 };
