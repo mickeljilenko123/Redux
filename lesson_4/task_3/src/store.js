@@ -1,6 +1,6 @@
 import { createStore } from "redux";
-import usersReducer from "./users/users.reducer";
+import paginationReducer from "./users/users.reducer";
 
-const store = createStore(usersReducer);
+const store = createStore(paginationReducer);
 
 export default store;
