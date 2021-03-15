@@ -7,8 +7,10 @@ import store from "./store";
 const App = () => {
   return (
     <Provider store={store}>
-      <SearchField />
-      <UserInfo />
+      <div className="page">
+        <SearchField />
+        <UserInfo />
+      </div>
     </Provider>
   )
 }
