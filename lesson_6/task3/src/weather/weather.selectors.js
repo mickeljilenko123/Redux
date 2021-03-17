@@ -1,3 +1,3 @@
-
-export const weatherDataSelector = (state) =>
-  state.weather.weatherData;
+export const weatherDataSelectors = (state) => {
+    return state.weather.weatherData;
+}
